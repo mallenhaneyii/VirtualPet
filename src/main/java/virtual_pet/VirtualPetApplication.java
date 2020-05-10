@@ -36,6 +36,20 @@ public class VirtualPetApplication {
                 System.out.println("   _ \n" + "< 0 o >\n" + "  | |");
             }
 
+            if (babyYoda.getHunger() >= 19) {
+                System.out.println("Baby Yoda died of hunger!");
+                System.out.println("   _ \n" + "< x x >\n" + "  | |");
+            } else if (babyYoda.getThirst() >= 19) {
+                System.out.println("Baby Yoda died of thirst!");
+                System.out.println("   _ \n" + "< x x >\n" + "  | |");
+            } else if (babyYoda.getBoredom() >= 19) {
+                System.out.println("Baby Yoda died of boredom!");
+                System.out.println("   _ \n" + "< x x >\n" + "  | |");
+            } else if(babyYoda.getTick() >= 900) {
+                System.out.println("Baby Yoda is 900. He is now one with the force.");
+                System.out.println("   _ \n" + "< x x >\n" + "  | |");
+            }
+
             babyYoda.tick(0);
 
             System.out.println("Hunger: " + babyYoda.getHunger());
@@ -43,31 +57,13 @@ public class VirtualPetApplication {
             System.out.println("Boredom: " + babyYoda.getBoredom());
             System.out.println("Age: " + babyYoda.getTick());
 
-
             System.out.println("What would you like to do with Baby Yoda next?");
             System.out.println("1. Give Baby Yoda food");
             System.out.println("2. Give Baby Yoda a drink");
             System.out.println("3. Play with Baby Yoda");
             System.out.println("4. Nothing");
             yodaAction = input.nextInt();
-
-
         }
-
-//        if (hunger >= 20) {
-//            System.out.println("Baby Yoda died of hunger!");
-//            System.out.println("   _ \n" + "< x x >\n" + "  | |");
-//        }else if (thirst >= 20) {
-//            System.out.println("Baby Yoda died of thirst!");
-//            System.out.println("   _ \n" + "< x x >\n" + "  | |");
-//        }else if (boredom >= 20) {
-//            System.out.println("Baby Yoda died of boredom!");
-//            System.out.println("   _ \n" + "< x x >\n" + "  | |");
-//        }else if (tick >= 900){
-//            System.out.println("Baby Yoda is 900. He is now one with the force.");
-//            System.out.println("   _ \n" + "< x x >\n" + "  | |");
-
-
     }
-
 }
+
