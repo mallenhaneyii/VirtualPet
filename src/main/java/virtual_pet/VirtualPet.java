@@ -5,12 +5,14 @@ public class VirtualPet {
     private int hunger;
     private int thirst;
     private int boredom;
+    private int force;
     private int tick;
 
-    public VirtualPet(int hunger, int thirst, int boredom, int tick) {
+    public VirtualPet(int hunger, int thirst, int boredom, int force, int tick) {
         this.hunger = hunger;
         this.thirst = thirst;
         this.boredom = boredom;
+        this.force = force;
         this.tick = tick;
     }
 
@@ -36,7 +38,7 @@ public class VirtualPet {
 
     public int getBoredom() {
         return boredom;
-        }
+    }
 
     public void play(int toy) {
         boredom -= toy;
@@ -52,7 +54,7 @@ public class VirtualPet {
         tick += 1;
     }
 
-    public void tick(int time){
+    public void tick(int time) {
         hunger += 1;
         thirst += 1;
         boredom += 1;
@@ -60,6 +62,24 @@ public class VirtualPet {
 
     public int getTick() {
         return tick;
+    }
+
+    public void use(int power) {
+        force += (Math.random() * 10 + 1);
+        hunger += 1;
+        thirst += 1;
+        boredom += 1;
+        tick += 1;
+    }
+
+    public int getForce() {
+        return force;
+    }
+
+    public void confused(int huh) {
+        hunger -= 1;
+        thirst -= 1;
+        boredom -= 1;
     }
 }
 
