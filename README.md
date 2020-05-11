@@ -1,3 +1,11 @@
 # Virtual Pet
 
-See the HELP.md for assignment directions and guide.
+I started my project by running tests. My first test was do assign 'hunger' as my first instance variable and 'feed' as my first method to address it. I then added 'thirst' and 'boredom' and 'water' and 'play'. I then tested to make each variable address the others as well. For example, 'feed' decreased 'hunger' but increased 'thirst'. A lot of testing went into that, playing around with different values to create balance.
+
+I then started to write my program. In the app I introduced the player to Baby Yoda and gave them 3 options on what they could do with him. Once I got the game loop established with a simple 'while if loop' I decided to move on to creating a scenario where the game would end. For this I had the program check after each loop the values of the 3 variables. I decided if any of them reached a value as high as 30 Baby Yoda would die and the game would end. I also added the option for the user to do nothing that turn. I then moved on to add more variables.
+
+The first variable I added was the 'tick'. This worked as my time aspect of the game and gave Baby Yoda an extra year of life each turn. It also affected the other variables each turn as it was outside the loop and executed after each turn. For example, even if you fed Baby Yoda, his 'hunger' would decrease by 5 but also increase by 1 because of the 'tick'. At this point I saw the project as meeting the requirements.
+
+However I wanted to stretch. I messed around on my "NotePad" application in windows creating my own ASCII art. For each action he has a different face. Eating, drinking, play, nothing, using the force and when you sell him to the Empire. Those are the other things I added. I added the option to sell Baby Yoda to the Empire at anytime to end the game that way. I also added a fifth variable 'force'. This functioned as a leveling system that gives the player the opportunity to win the game and not just kill Baby Yoda. A message also diplays when he reaches a new Jedi milestone. The program checks his ability level each turn to notify the user his level. 
+
+All in all I'm happy with where I got this project. I wish I had used Strings instead of ints to give the program more flexablility. That would be the first thing I update when I revisit this project. I would also like to give the player the option to start over if Baby Yoda died, but ran low on time.
